@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    font-family: "Inter", sans-serif ;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+  }
+
+.navbar {
+    border: none; /* Remove any border */
+    margin: 0;    /* Remove margin if causing spacing */
+  }
+.Aboutrj {
+    border: none; /* Remove any border */
+    margin: 0;    /* Remove margin if causing spacing */
+  }
+
+.Contact{
+    border: none; /* Remove any border */
+    margin: 0;
+}
+
+.Experience{
+    border: none; /* Remove any border */
+    margin: 0;
+}
+.Hero{
+    border: none; /* Remove any border */
+    margin: 0;
+}
+.Projects{
+    border: none; /* Remove any border */
+    margin: 0;
+}
+.Technologies{
+    border: none; /* Remove any border */
+    margin: 0;
+}
