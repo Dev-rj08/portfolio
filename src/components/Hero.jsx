@@ -22,14 +22,12 @@ const Hero = () => {
         sequence={[
           "Ragavendra Raja Jagathish",
           2500,
+          "Integrated MTech CSE Core",
+          800,
           "I'm a Developer",
-          1000,
-          "I'm a Competitive Coder",
-          1000,
-          "I'm a UI/UX Designer",
-          1000,
-          "I'm a Prompt Engineer",
-          1000
+          900,
+          "I'm a Designer",
+          900,
         ]}
         repeat={Infinity}
         />
