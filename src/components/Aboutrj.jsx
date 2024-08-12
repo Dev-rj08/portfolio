@@ -9,6 +9,7 @@ const Aboutrj = () => {
         whileInView={{opacity:1,y:0}}
         initial= {{y:-100, opacity:0}}
         transition= {{duration:0.5}}
+        whileHover={{ scale: 1.1 }}
         className="my-20 text-center text-4xl"> About
         <span className= "text-neutral-500"> Me </span>
       </motion.h1>

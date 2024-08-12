@@ -23,13 +23,13 @@ const Hero = () => {
           "Ragavendra Raja Jagathish",
           2500,
           "I'm a Developer",
-          2500,
+          1000,
           "I'm a Competitive Coder",
-          2500,
+          1000,
           "I'm a UI/UX Designer",
-          2500,
+          1000,
           "I'm a Prompt Engineer",
-          2500
+          1000
         ]}
         repeat={Infinity}
         />

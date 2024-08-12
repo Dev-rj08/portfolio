@@ -2,75 +2,65 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-export const INTRO_CONTENT = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+export const INTRO_CONTENT = "I am a pre-final year Integrated M.Tech student at VIT Vellore, specializing in Computer Science and Engineering. With a solid grasp of Data Structures, Algorithms, Operating Systems, and Database Management Systems, I am passionate about full-stack development and eager to apply my skills to real-world projects. My goal is to secure a top placement and contribute to innovative solutions in the tech industry.";
 
-export const ABOUT_TEXT = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+export const ABOUT_TEXT = "Currently pursuing an Integrated MTech in Computer Science and Engineering at VIT Vellore, I have cultivated a strong foundation in Full Stack Development, with a particular emphasis on Data Science, Cyber Security, and Generative AI. My academic and practical experiences have equipped me with comprehensive skills in various modern technologies, enabling me to develop robust, scalable, and secure applications. I am committed to leveraging my expertise to address complex technical challenges and drive innovation in the field.";
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["JavaScript", "React.js", "Next.js", "MongoDB"],
+    year: "2022 - 2024",
+    role: "Senior Core Committee Member",
+    company: "Digit Squad",
+    description: `As a Core Committee Member of Digit SQUAD at VIT Vellore, I have been actively involved in organizing and managing various tech events, including coding challenges, workshops, and treasure hunts. My role has allowed me to contribute to the vibrant tech community on campus, fostering collaboration and innovation among students. Through these events, I've enhanced my leadership skills and gained valuable experience in event planning and execution.`,
+    technologies: ["HTML/CSS" ,"JavaScript", "Python" , "Discord"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "MySQL"],
+    year: "2023 - 2024",
+    role: "Core Committee Member",
+    company: "ADG VIT",
+    description: 'I contributed to organizing events and workshops focused on iOS development and Apple technologies. While not highly active, my involvement included supporting the planning and execution of key initiatives that engaged the developer community at VIT.',
+    technologies: ["Flutter", "Dart" ,"JavaScript", "React.js", "Next.js", "MongoDB"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "2022 - 2024",
+    role: "Senior Core Committee Member",
+    company: "Youth Red Cross",
+    description: `I actively participated in organizing and promoting blood donation drives on campus. I also personally donated blood, contributing to the cause and helping raise awareness about the importance of blood donation among my peers.`,
+    technologies: [],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "SQLite"],
+    year: "2024",
+    role: "Riviera  Coordinator",
+    company: "Riviera'24",
+    description: `As a member of the sales team for Riviera'24, VIT's Cultural Fest, I was responsible for promoting and selling sponsorships, event tickets, and merchandise. My role involved developing sales strategies, engaging with potential sponsors, managing client relationships, and overseeing merchandise sales. This experience enhanced my skills in sales, negotiation, and client management, while also contributing to the overall success of the fest.`,
+    technologies: [],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Just Broom",
     image: project1,
+    githubUrl:"https://github.com/Dev-rj08/Just-Broom",
+    demoUrl:"https://github.com/Dev-rj08/Just-Broom",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Just Broom is a college hostel cleaning application developed using HTML, CSS, JavaScript, Python and MongoDB. It simplifies the process of booking reliable cleaning services, ensuring students enjoy a clean and comfortable living space. The app offers a user-friendly interface, making it easy to schedule and manage cleaning appointments effortlessly.",
+    technologies: ["HTML", "CSS", "JavaScript", "Python" , "MongoDB"],
   },
   {
-    title: "Task Management App",
+    title: "Hotel Recommendation",
     image: project2,
+    githubUrl:"www.github.com/Dev-rj08/Just-Broom",
+    demoUrl:"google.com",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A tool designed to recommend hotels by analyzing user preferences and performing sentiment analysis on reviews. Developed with Flask, it scrapes hotel data and delivers personalized recommendations.",
+    technologies: ["HTML", "CSS", "JavaScript", "Python"],
   },
 ];
 
 
 export const CONTACT = {
-  address: "17 V ,Nalla Gounder Street ,Vadavalli , Coimbatore, TN",
-  phoneNo: "+91 9487008000",
+  address: "Coimbatore, TN",
+  phoneNo: "+919487008000",
   email: "ragavendraraja08@gmail.com",
 };
