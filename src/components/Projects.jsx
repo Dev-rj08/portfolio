@@ -1,7 +1,5 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import {Button} from "@nextui-org/react";
-
 
 const Projects = () => {
   return (
@@ -39,20 +37,20 @@ const Projects = () => {
             <div className="flex items-center justify-between mb-2">
               <h6 className="font-semibold">{project.title}</h6>
               <div className="space-x-2">
-                <Button
+                <button
                 as="a"
                 href={project.githubUrl}
                 target="_blank"
                 className="mr-2 rounded-full border-2 border-purple-300 bg-transparent text-purple-300 px-2 py-1 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800">
                   Github
-                </Button>              
-                <Button 
+                </button>              
+                <button 
                 as="a"
                 href={project.demoUrl}
                 target="_blank"
                 className="mr-2 rounded-full border-2 border-purple-300 bg-transparent text-purple-300 px-2 py-1 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800">
                   Demo
-                </Button>              
+                </button>              
               </div>
             </div>
 

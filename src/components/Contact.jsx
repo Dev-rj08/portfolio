@@ -1,9 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { Button as NextUIButton } from "@nextui-org/react";
 import { useState, useEffect } from "react";
-
-const MotionButton = motion(NextUIButton); // Wrap NextUI Button with motion
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState('');
@@ -149,7 +146,7 @@ const Contact = () => {
             ></textarea>
             </motion.div>
 
-            <MotionButton
+            <motion.button
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x : 100 }}
               transition={{ duration: 0.5 }}
@@ -157,7 +154,7 @@ const Contact = () => {
               className="mr-2 rounded-lg border-2 border-purple-300 bg-transparent text-purple-300 px-4 py-2 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800"
             >
               Get in Touch
-            </MotionButton>
+            </motion.button>
           </form>
           {formStatus && <p className="mt-4 text-center text-white-800">{formStatus}</p>}
         </div>
