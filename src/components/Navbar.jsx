@@ -41,6 +41,7 @@ const Navbar = () => {
             <motion.a
               whileHover={{ scale: 1.1 }}
               href="https://buymeacoffee.com/rj08"
+              target="_blank"
               className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 flex items-center space-x-2"
             >
               <img src={coffeeLogo} alt="Coffee Logo" className="w-10 h-7 sm:w-10 sm:h-10" />
@@ -68,6 +69,7 @@ const Navbar = () => {
               </a>
               <a
                 href="https://buymeacoffee.com/rj08"
+                target="_blank"
                 className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 flex items-center space-x-2"
               >
                 <img src={coffeeLogo} alt="Coffee Logo" className="w-4 h-4 sm:w-4 sm:h-4" />

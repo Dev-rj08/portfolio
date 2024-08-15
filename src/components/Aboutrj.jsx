@@ -9,7 +9,7 @@ const Aboutrj = () => {
            whileInView={{ opacity: 1, x: 0 }}
            initial={{ x: -100, opacity: 0 }}
            transition={{ duration: 0.5 }}
-           className="absolute inset-0 bg-cover bg-center z-10"
+           className="absolute inset-0 bg-cover bg-center w-full h-full z-10"
            style={{ 
             backgroundImage: `url(${backgroundImg})`,
           }}>
