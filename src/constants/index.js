@@ -11,56 +11,62 @@ export const EXPERIENCES = [
     year: "2022 - 2024",
     role: "Senior Core Committee Member",
     company: "Digit Squad",
-    description: `As a Core Committee Member of Digit SQUAD at VIT Vellore, I have been actively involved in organizing and managing various tech events, including coding challenges, workshops, and treasure hunts. My role has allowed me to contribute to the vibrant tech community on campus, fostering collaboration and innovation among students. Through these events, I've enhanced my leadership skills and gained valuable experience in event planning and execution.`,
-    technologies: ["HTML/CSS" ,"JavaScript", "Python" , "Discord"],
+    description: 'Led the organization of tech events and workshops, focusing on iOS development and coding challenges, resulting in increased outreach and engagement. Managed event planning and execution, enhancing team leadership and effective management.',
+    technologies: ["HTML / CSS" ,"JavaScript", "Python" , "Discord"],
   },
   {
     year: "2023 - 2024",
-    role: "Core Committee Member",
-    company: "ADG VIT",
-    description: 'I contributed to organizing events and workshops focused on iOS development and Apple technologies. While not highly active, my involvement included supporting the planning and execution of key initiatives that engaged the developer community at VIT.',
+    role: "Senior Core Committee Member",
+    company: "Apple Developers Group VIT",
+    description: 'Developed and managed technical projects: Spearheaded the creation of innovative software solutions, enhancing club operations and member engagement.',
     technologies: ["Flutter", "Dart" ,"JavaScript", "React.js", "Next.js", "MongoDB"],
   },
   {
     year: "2022 - 2024",
     role: "Senior Core Committee Member",
     company: "Youth Red Cross",
-    description: `I actively participated in organizing and promoting blood donation drives on campus. I also personally donated blood, contributing to the cause and helping raise awareness about the importance of blood donation among my peers.`,
-    technologies: [],
+    description: 'Orchestrated donation drives and motivated team participation, successfully enhancing community involvement and engagement. Championed awareness campaigns: Promoted blood donation, driving increased community participation and support.',
+    technologies: ["NGO"],
   },
   {
     year: "2024",
-    role: "Riviera  Coordinator",
+    role: "Riviera\’24  Coordinator",
     company: "Riviera'24",
-    description: `As a member of the sales team for Riviera'24, VIT's Cultural Fest, I was responsible for promoting and selling sponsorships, event tickets, and merchandise. My role involved developing sales strategies, engaging with potential sponsors, managing client relationships, and overseeing merchandise sales. This experience enhanced my skills in sales, negotiation, and client management, while also contributing to the overall success of the fest.`,
+    description: 'Managed sales operations for Riviera’24, one of India’s top 5 cultural fests, overseeing sponsorship acquisition, event ticket sales, and merchandise distribution. Formulated and executed sales strategies, fostering robust client relationships and contributing significantly to the fest’s success.',
     technologies: [],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "Just Broom",
+    title: "JustBroom: Hostel Room Cleaning Management System",
     image: project1,
-    githubUrl:"https://github.com/Dev-rj08/Just-Broom",
-    demoUrl:"https://github.com/Dev-rj08/Just-Broom",
-    description:
-      "Just Broom is a college hostel cleaning application developed using HTML, CSS, JavaScript, Python and MongoDB. It simplifies the process of booking reliable cleaning services, ensuring students enjoy a clean and comfortable living space. The app offers a user-friendly interface, making it easy to schedule and manage cleaning appointments effortlessly.",
+    githubUrl:"https://www.github.com/Dev-rj08/Just-Broom",
+    demoUrl:"https://www.github.com/Dev-rj08/Just-Broom",
+    description:"Developed a responsive web application using HTML, CSS, JavaScript, and Bootstrap, with MongoDB for backend storage and task management. Implemented task scheduling and real-time feedback features, enhancing operational efficiency and communication for over 200 hostel residents and staff.Deployed on GitHub Pages, facilitating user access and improving internal coordination.",
     technologies: ["HTML", "CSS", "JavaScript", "Python" , "MongoDB"],
   },
   {
-    title: "Hotel Recommendation",
+    title: "Advanced Hotel Recommendation System",
     image: project2,
-    githubUrl:"www.github.com/Dev-rj08/Just-Broom",
-    demoUrl:"google.com",
-    description:
-      "A tool designed to recommend hotels by analyzing user preferences and performing sentiment analysis on reviews. Developed with Flask, it scrapes hotel data and delivers personalized recommendations.",
+    githubUrl:"https://www.github.com/Dev-rj08/Online-Hotel-Recommendation-",
+    demoUrl:"https://www.github.com/Dev-rj08/Online-Hotel-Recommendation-",
+    description:"Developed an advanced hotel recommendation system: Utilized web scraping techniques to gather data from online sources and applied sentiment analysis to user reviews, providing actionable insights.Employed Python libraries: Leveraged BeautifulSoup and NLTK for precise data processing and ranking based on sentiment analysis.",
     technologies: ["HTML", "CSS", "JavaScript", "Python"],
+  },
+  {
+    title: "Professional Portfolio Website",
+    image: project3,
+    githubUrl:"https://www.github.com/Dev-rj08/portfolio",
+    demoUrl:"https://www.devrj.site/",
+    description:"Created a modern portfolio website using TailwindCSS for responsive design, Next.js for server-side rendering and performance optimization, and FramerMotion for interactive animations. Achieved high visibility and professional presentation with a custom domain, launching the site on Vercel and GitHub Pages with advanced user engagement features.",
+    technologies: ["HTML", "TailwindCSS", "Node.js", "Next.js"],
   },
 ];
 
 
 export const CONTACT = {
-  address: "Coimbatore, TN",
-  phoneNo: "+919487008000",
+  address: "Coimbatore, India",
+  phoneNo: "+91 9487008000",
   email: "ragavendraraja08@gmail.com",
 };

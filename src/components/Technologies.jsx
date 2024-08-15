@@ -36,106 +36,107 @@ const Technologies = () => {
           className="my-20 text-center text-4xl">
           Technologies
       </motion.h1>
-      <div className="flex flex-wrap item-center justify-center gap-4">
-        <div className="w-full flex flex-wrap item-center justify-center gap-4">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
+        <div className="w-full flex flex-wrap items-center justify-center gap-2 sm:gap-4">
           <motion.div 
             variants={iconVariants(5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiPython className="text-7xl text-yellow-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <DiPython className="text-4xl sm:text-7xl text-yellow-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiC className="text-7xl text-blue-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <SiC className="text-4xl sm:text-7xl text-blue-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiCplusplus className="text-7xl text-green-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <SiCplusplus className="text-4xl sm:text-7xl text-green-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(4)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaJava className="text-7xl text-red-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaJava className="text-4xl sm:text-7xl text-red-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(6)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaHtml5 className="text-7xl text-orange-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaHtml5 className="text-4xl sm:text-7xl text-orange-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaCss3Alt className="text-7xl text-blue-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaCss3Alt className="text-4xl sm:text-7xl text-blue-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiBootstrap className="text-7xl text-purple-600" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <SiBootstrap className="text-4xl sm:text-7xl text-purple-600" />
           </motion.div>
         </div>
-        <div className="w-full flex flex-wrap item-center justify-center gap-4">
-          <motion.div
+        <div className="w-full flex flex-wrap items-center justify-center gap-2 sm:gap-4">
+          <motion.div 
             variants={iconVariants(5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaJs className="text-7xl text-yellow-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaJs className="text-4xl sm:text-7xl text-yellow-400" />
           </motion.div>
-          <motion.div
-             variants={iconVariants(2.5)}
-             initial="initial"
-             animate="animate"
-             className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaReact className="text-7xl text-cyan-400" />
+          <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaReact className="text-4xl sm:text-7xl text-cyan-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiMongodb className="text-7xl text-green-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <SiMongodb className="text-4xl sm:text-7xl text-green-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(4)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiMysql className="text-7xl text-blue-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <DiMysql className="text-4xl sm:text-7xl text-blue-400" />
           </motion.div>
           <motion.div 
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <TbBrandNextjs className="text-7xl text-gray-800" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <TbBrandNextjs className="text-4xl sm:text-7xl text-gray-800" />
           </motion.div>
-          <motion.div variants={iconVariants(5)}
+          <motion.div 
+            variants={iconVariants(5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaGitAlt className="text-7xl text-orange-600" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaGitAlt className="text-4xl sm:text-7xl text-orange-600" />
           </motion.div>
           <motion.div 
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaGithub className="text-7xl text-gray-400" />
+            className="rounded-2xl border-4 border-neutral-800 p-2 sm:p-4">
+            <FaGithub className="text-4xl sm:text-7xl text-gray-400" />
           </motion.div>
         </div>
       </div>

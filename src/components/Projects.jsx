@@ -11,7 +11,7 @@ const Projects = () => {
             whileHover={{ scale: 1.1 }}
             className="my-20 text-center text-4xl">Projects
         </motion.h1>
-        <div>{PROJECTS.map((project,index) => (
+        <div>{PROJECTS.map((project, index) => (
             <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
               <motion.div 
                 whileInView={{opacity:1,y:0}}
@@ -37,20 +37,20 @@ const Projects = () => {
             <div className="flex items-center justify-between mb-2">
               <h6 className="font-semibold">{project.title}</h6>
               <div className="space-x-2">
-                <button
-                as="a"
+                <a
                 href={project.githubUrl}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-2 rounded-full border-2 border-purple-300 bg-transparent text-purple-300 px-2 py-1 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800">
                   Github
-                </button>              
-                <button 
-                as="a"
+                </a>             
+                <a 
                 href={project.demoUrl}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-2 rounded-full border-2 border-purple-300 bg-transparent text-purple-300 px-2 py-1 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800">
                   Demo
-                </button>              
+                </a>              
               </div>
             </div>
 

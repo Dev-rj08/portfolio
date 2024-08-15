@@ -16,7 +16,6 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the default form submission
-
     const formData = new FormData(event.target);
     const data = {
       Name: formData.get('name'),
@@ -26,8 +25,8 @@ const Contact = () => {
 
     if (smtpLoaded) {
       window.Email.send({
-        SecureToken:"68307c27-05cb-45dd-b808-059497f31810",
-        To: "ragavendraraja08@gmail.com", 
+        SecureToken: "68307c27-05cb-45dd-b808-059497f31810",
+        To: "ragavendraraja08@gmail.com",
         From: data.Email,
         Subject: "New message from your website",
         Body: `Name: ${data.Name}\nEmail: ${data.Email}\n\nMessage:\n${data.Message}`,
@@ -42,7 +41,7 @@ const Contact = () => {
       });
     } else {
       setFormStatus('SMTP.js script not loaded.');
-    }
+    }    
   };
 
   return (
@@ -151,8 +150,7 @@ const Contact = () => {
               initial={{ opacity: 0, x : 100 }}
               transition={{ duration: 0.5 }}
               type="submit"
-              className="mr-2 rounded-lg border-2 border-purple-300 bg-transparent text-purple-300 px-4 py-2 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800"
-            >
+              className="mr-2 rounded-lg border-2 border-purple-300 bg-transparent text-purple-300 px-4 py-2 text-xs font-medium shadow-md hover:bg-purple-100 hover:text-purple-800">
               Get in Touch
             </motion.button>
           </form>
