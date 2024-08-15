@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { INTRO_CONTENT } from "../constants";
 import { TypeAnimation } from 'react-type-animation';
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const container = (delay) => ({
   hidden: { y: -100, opacity: 0 },
@@ -39,6 +41,40 @@ const Hero = () => {
         >
           Pre Final Year Student
         </motion.span>
+        <motion.div 
+          whileInView={{opacity:1,y:0}}
+          initial={{opacity:0,y:-50}}
+          transition={{duration:0.5}}
+          className="mt-6 flex items-start justify-start gap-10 text-2xl">
+          <motion.a 
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            href="https://www.linkedin.com/in/ragavendra-raja-jagathish-49bb91179/" target="_blank" >
+            <FaLinkedin />
+          </motion.a>
+          <motion.a 
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}  
+            href="https://github.com/Dev-rj08" target="_blank">
+            <FaGithub />
+          </motion.a>
+          <motion.a 
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            href="https://x.com/RagavendraJaga" target="_blank">
+            <FaXTwitter/>
+          </motion.a>
+          <motion.a 
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            href="https://www.instagram.com/ragavendraraja_jagathish/" target="_blank">
+            <FaInstagram />
+          </motion.a>
+        </motion.div>
         <motion.p
           variants={container(0.5)}
           initial="hidden"
