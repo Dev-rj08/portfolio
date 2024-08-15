@@ -81,5 +81,39 @@
     font-weight: 700;
     overflow: hidden;
     color:#fff;
+}
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .relative {
+    position: relative;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }

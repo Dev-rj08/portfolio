@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 
 const Experience = () => {
   return (
+    <section id="experience" className="py-16">
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
           whileInView={{opacity:1,y:0}}
@@ -40,6 +41,7 @@ const Experience = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

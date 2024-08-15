@@ -2,9 +2,9 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-export const INTRO_CONTENT = "I am a pre-final year Integrated M.Tech student at VIT Vellore, specializing in Computer Science and Engineering. With a solid grasp of Data Structures, Algorithms, Operating Systems, and Database Management Systems, I am passionate about full-stack development and eager to apply my skills to real-world projects. My goal is to secure a top placement and contribute to innovative solutions in the tech industry.";
+export const INTRO_CONTENT = "I am a pre-final year Integrated M.Tech student specializing in Computer Science and Engineering at VIT Vellore. With a solid understanding of Data Structures, Algorithms, Operating Systems, and Database Management Systems, I am passionate about full-stack development and eager to apply my knowledge to real-world projects. My goal is to secure a top placement and contribute to innovative solutions within the tech industry.";
 
-export const ABOUT_TEXT = "Currently pursuing an Integrated MTech in Computer Science and Engineering at VIT Vellore, I have cultivated a strong foundation in Full Stack Development, with a particular emphasis on Data Science, Cyber Security, and Generative AI. My academic and practical experiences have equipped me with comprehensive skills in various modern technologies, enabling me to develop robust, scalable, and secure applications. I am committed to leveraging my expertise to address complex technical challenges and drive innovation in the field.";
+export const ABOUT_TEXT = "I am currently pursuing an Integrated M.Tech in Computer Science and Engineering at VIT Vellore, where I have developed a robust foundation in Full Stack Development with a specialized focus on Data Science, Cyber Security, and Generative AI. My academic journey and hands-on projects have honed my skills in a range of advanced technologies, empowering me to create scalable, secure, and high-performance applications. I am dedicated to utilizing my technical expertise to tackle complex challenges and drive innovation within the industry.";
 
 export const EXPERIENCES = [
   {
@@ -12,7 +12,7 @@ export const EXPERIENCES = [
     role: "Senior Core Committee Member",
     company: "Digit Squad",
     description: 'Led the organization of tech events and workshops, focusing on iOS development and coding challenges, resulting in increased outreach and engagement. Managed event planning and execution, enhancing team leadership and effective management.',
-    technologies: ["HTML / CSS" ,"JavaScript", "Python" , "Discord"],
+    technologies: ["HTML" ,"CSS" ,"JavaScript", "Python" , "Discord"],
   },
   {
     year: "2023 - 2024",
@@ -70,3 +70,12 @@ export const CONTACT = {
   phoneNo: "+91 9487008000",
   email: "ragavendraraja08@gmail.com",
 };
+
+export const navItems = [
+  { label: "About", href: "#about" },
+  { label: "Technologies", href: "#technologies" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
+

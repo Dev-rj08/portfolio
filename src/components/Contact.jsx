@@ -45,6 +45,7 @@ const Contact = () => {
   };
 
   return (
+    <section id="contact" className="py-16">
     <div className="border-b border-neutral-900 pb-20">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +96,7 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
               className="text-center lg:text-left mt-4 text-white-500"
             >
-              &#xa9;2024 RJ. All rights reserved.
+             Made with ❤️ by @ragavendrarajajagathish
             </motion.h6>
           </div>
         </div>
@@ -158,6 +159,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

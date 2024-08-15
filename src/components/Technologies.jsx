@@ -27,6 +27,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
+    <section id="technologies" className="py-16">
     <div className="border-b border-neutral-800 pb-24">
       <motion.h1
            whileInView={{opacity:1,y:0}}
@@ -141,6 +142,7 @@ const Technologies = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

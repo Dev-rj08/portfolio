@@ -1,4 +1,4 @@
-"use client";
+import React from 'react';
 import { motion } from 'framer-motion';
 import { INTRO_CONTENT } from "../constants";
 import { TypeAnimation } from 'react-type-animation';
@@ -14,7 +14,8 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-border-neutral-900 pb-4 lg:mb-35">
+    <section id="hero" className="py-16">
+    <div className="border-border-neutral-900 pb-4 lg:mb-35 mt-16 lg:mt-32"> {/* Add top margin */}
       <div className="flex flex-col gap-4">
         <div className="relative h-20 sm:h-28 lg:h-36"> {/* Adjust height as needed */}
           <TypeAnimation
@@ -48,6 +49,7 @@ const Hero = () => {
         </motion.p>
       </div>
     </div>
+    </section>
   );
 };
 
