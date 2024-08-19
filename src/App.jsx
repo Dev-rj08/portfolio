@@ -9,7 +9,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { motion, useScroll } from "framer-motion";
 import Preloader from './components/Preloader';
-import TempScreen from './components/TempScreen';
 
 
 function App() {
@@ -39,8 +38,6 @@ function App() {
                     )}
                     {isPreloaderComplete && (
                         <>
-                            <TempScreen />
-                            {/* 
                             <Navbar />
                             <Hero />
                             <Aboutrj />
@@ -48,7 +45,6 @@ function App() {
                             <Experience />
                             <Projects />
                             <Contact /> 
-                            */}
 
                             
                         </>
