@@ -38,13 +38,17 @@ function App() {
                     )}
                     {isPreloaderComplete && (
                         <>
+                            <TempScreen />
+                            {/* 
                             <Navbar />
                             <Hero />
                             <Aboutrj />
                             <Technologies />
                             <Experience />
                             <Projects />
-                            <Contact />
+                            <Contact /> 
+                            */}
+
                             
                         </>
                     )}
