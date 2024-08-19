@@ -45,8 +45,6 @@ function App() {
                             <Experience />
                             <Projects />
                             <Contact /> 
-
-                            
                         </>
                     )}
                 </div>
