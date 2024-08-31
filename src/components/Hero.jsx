@@ -25,12 +25,8 @@ const Hero = () => {
             sequence={[
               "Ragavendra Raja Jagathish",
               3000,
-              "I'm a Developer",
-              1000,
-              "I'm a Designer",
-              1000,
             ]}
-            repeat={Infinity}
+            repeat={1}
           />
         </div>
         <motion.span

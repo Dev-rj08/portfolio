@@ -6,13 +6,16 @@ const Aboutrj = () => {
   return (
     <section id="about" className="relative w-full h-screen overflow-x-hidden">
       <motion.div 
-           whileInView={{ opacity: 1, x: 0 }}
-           initial={{ x: -100, opacity: 0 }}
-           transition={{ duration: 0.5 }}
-           className="absolute inset-0 bg-cover bg-center w-full h-full z-10"
-           style={{ 
-            backgroundImage: `url(${backgroundImg})`,
-          }}>
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="absolute inset-0 w-full h-full z-10"
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="flex items-center justify-center w-full h-full px-4">
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
@@ -36,8 +39,8 @@ const Aboutrj = () => {
               {ABOUT_TEXT}
             </motion.p>
           </motion.div>
-          </div>
-        </motion.div>
+        </div>
+      </motion.div>
     </section>
   );
 };
