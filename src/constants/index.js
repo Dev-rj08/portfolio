@@ -2,11 +2,33 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-export const INTRO_CONTENT = "I am a pre-final year Integrated M.Tech student specializing in Computer Science and Engineering at VIT Vellore. With a solid understanding of Data Structures, Algorithms, Operating Systems, and Database Management Systems, I am passionate about full-stack development and eager to apply my knowledge to real-world projects. My goal is to secure a top placement and contribute to innovative solutions within the tech industry.";
+import project5 from "../assets/projects/project-5.jpg";
+export const INTRO_CONTENT = "As a pre-final year Integrated M.Tech student in Computer Science and Engineering at VIT Vellore, I have built a strong foundation in Data Structures, Algorithms, Operating Systems, and Database Management Systems. Passionate about full-stack development, I thrive on solving complex problems and building innovative, scalable solutions. With a keen eye on emerging technologies, my goal is to secure a top-tier placement and make a meaningful impact in the tech industry through cutting-edge advancements and transformative solutions.";
 
-export const ABOUT_TEXT = "I am currently pursuing an Integrated M.Tech in Computer Science and Engineering at VIT Vellore, where I have developed a robust foundation in Full Stack Development with a specialized focus on Data Science, Cyber Security, and Generative AI. My academic journey and hands-on projects have honed my skills in a range of advanced technologies, empowering me to create scalable, secure, and high-performance applications. I am dedicated to utilizing my technical expertise to tackle complex challenges and drive innovation within the industry.";
+export const ABOUT_TEXT = "Pursuing an Integrated M.Tech in Computer Science and Engineering at VIT Vellore, I have cultivated expertise in Full Stack Development, complemented by a specialized focus on Data Science, Cyber Security, and Generative AI. Through academic rigor and hands-on projects, I have refined my ability to design, develop, and optimize scalable, secure, and high-performance applications. Passionate about leveraging technology to solve real-world challenges, I am committed to driving innovation and creating impactful solutions in the ever-evolving tech landscape.";
 
 export const EXPERIENCES = [
+  {
+    year: "2025",
+    role: "Riviera\’25  Student Manager",
+    company: "Riviera'25",
+    description: 'Led sales operations for Riviera’25, one of India’s top 5 cultural fests, managing sponsorship acquisition, ticket sales, and merchandise distribution. Designed and executed sales strategies, built strong client relationships, and played a pivotal role in the fest’s success.',
+    technologies: [],
+  },
+  {
+    year: "2024",
+    role: "GraVITas\’24  Student Manager",
+    company: "GraVITas'24",
+    description: '"Spearheaded sales operations for GraVITas’24, VIT’s premier tech fest, overseeing sponsorship outreach, event ticketing, and merchandise sales. Developed strategic partnerships, optimized revenue channels, and enhanced brand engagement, contributing to the fest’s overall success.',
+    technologies: [],
+  },
+  {
+    year: "2024",
+    role: "Riviera\’24  Student Coordinator",
+    company: "Riviera'24",
+    description: 'Managed sales operations for Riviera’24, one of India’s top 5 cultural fests, overseeing sponsorship acquisition, event ticket sales, and merchandise distribution. Formulated and executed sales strategies, fostering robust client relationships and contributing significantly to the fest’s success.',
+    technologies: [],
+  },
   {
     year: "2022 - 2024",
     role: "Senior Core Committee Member",
@@ -28,16 +50,17 @@ export const EXPERIENCES = [
     description: 'Orchestrated donation drives and motivated team participation, successfully enhancing community involvement and engagement. Championed awareness campaigns: Promoted blood donation, driving increased community participation and support.',
     technologies: ["NGO"],
   },
-  {
-    year: "2024",
-    role: "Riviera\’24  Coordinator",
-    company: "Riviera'24",
-    description: 'Managed sales operations for Riviera’24, one of India’s top 5 cultural fests, overseeing sponsorship acquisition, event ticket sales, and merchandise distribution. Formulated and executed sales strategies, fostering robust client relationships and contributing significantly to the fest’s success.',
-    technologies: [],
-  },
 ];
 
 export const PROJECTS = [
+  {
+    title: "Optimizing Data Security in Transmission Through Lightweight Cryptography - Ongoing",
+    image: project4,
+    githubUrl:"https://www.github.com/Dev-rj08/",
+    demoUrl:"https://www.github.com/Dev-rj08/",
+    description:"Designed an advanced cryptographic model integrating ChaCha20 encryption with Ikeda chaotic maps to enhance data security in IoT environments. Implemented tile-based image encryption, achieving 99.6% NPCR and passing NIST randomness tests for robustness. Deployed the system on GitHub Pages, improving accessibility and enhancing internal collaboration..",
+    technologies: ["Ikeda Map", "ChaCha20", "Python" , "Jupyter-Notebook"],
+  },
   {
     title: "JustBroom: Hostel Room Cleaning Management System",
     image: project1,
@@ -55,6 +78,14 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "Python"],
   },
   {
+    title: "Reliable Energy Consumption Analysis System — Tensorflow, Keras,NumPy ",
+    image: project5,
+    githubUrl:"https://github.com/Dev-rj08/Reliable-Energy-Consumption-Analysis-System",
+    demoUrl:"https://github.com/Dev-rj08/Reliable-Energy-Consumption-Analysis-System",
+    description:"Optimized energy usage patterns, leading to improved conservation and efficiency. Applied machine learning techniques to analyze historical energy data and generate actionable insights.",
+    technologies: ["Python","Tensorflow", "Keras", "NumPy","Jupyter-NoteBook"],
+  },
+  {
     title: "Professional Portfolio Website",
     image: project3,
     githubUrl:"https://www.github.com/Dev-rj08/portfolio",
@@ -68,7 +99,7 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Coimbatore, India",
   phoneNo: "+91 9487008000",
-  email: "ragavendraraja08@gmail.com",
+  email: "ragavendra.jagathish@gmail.com",
 };
 
 export const navItems = [

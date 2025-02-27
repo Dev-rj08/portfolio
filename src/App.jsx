@@ -10,7 +10,6 @@ import Contact from './components/Contact';
 import { motion, useScroll } from "framer-motion";
 import Preloader from './components/Preloader';
 
-
 function App() {
     const { scrollYProgress } = useScroll();
     const [isPreloaderComplete, setIsPreloaderComplete] = useState(false);
