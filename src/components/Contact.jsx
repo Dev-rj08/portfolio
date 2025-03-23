@@ -21,43 +21,29 @@ const Contact = () => {
     document.body.appendChild(script);
   }, []);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = {
-      Name: formData.get("name"),
-      Email: formData.get("email"),
-      Message: formData.get("message"),
-    };
-
     if (!smtpLoaded || !window.Email) {
-      console.error("❌ SMTP.js script not available");
       setFormStatus("SMTP.js not loaded yet. Please try again.");
       return;
     }
 
-    console.log("📩 Sending email with data:", data);
-
     setFormStatus("Sending...");
-    window.Email.send({
-      SecureToken: "1a1409d2-3882-4fda-b9ee-ac49bebef0c6",
-      To: "ragavendra.jagathish@gmail.com",
-      From: data.Email,
-      Subject: "New message from your website",
-      Body: `Name: ${data.Name}\nEmail: ${data.Email}\n\nMessage:\n${data.Message}`,
-    })
-      .then((response) => {
-        console.log("📨 SMTP Response:", response);
-        if (response === "OK") {
-          setFormStatus("Message sent successfully!");
-        } else {
-          setFormStatus("Failed to send message. Please try again.");
-        }
-      })
-      .catch((error) => {
-        console.error("❌ Email sending failed:", error);
-        setFormStatus("Error sending message. Check console for details.");
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await window.Email.send({
+        SecureToken: "f452f30d-1291-4a6b-aab2-9382c9708243 ",
+        To: "ragavendra.jagathish@gmail.com",
+        From: formData.get("email"),
+        Subject: "New message from your website",
+        Body: `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\n\nMessage:\n${formData.get("message")}`,
       });
+      setFormStatus(response === "OK" ? "Message sent successfully!" : "Failed to send message. Please try again.");
+    } catch (error) {
+      setFormStatus("Error sending message. Check console for details.");
+      console.error("❌ Email sending failed:", error);
+    }
   };
 
   return (
