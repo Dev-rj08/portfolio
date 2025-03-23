@@ -11,11 +11,11 @@ const Contact = () => {
     script.src = "https://smtpjs.com/v3/smtp.js";
     script.async = true;
     script.onload = () => {
-      console.log("SMTP.js loaded successfully");
+      console.log("✅ SMTP.js loaded successfully");
       setSmtpLoaded(true);
     };
     script.onerror = () => {
-      console.error("Failed to load SMTP.js");
+      console.error("❌ Failed to load SMTP.js");
       setSmtpLoaded(false);
     };
     document.body.appendChild(script);
@@ -30,30 +30,34 @@ const Contact = () => {
       Message: formData.get("message"),
     };
 
-    if (smtpLoaded && window.Email) {
-      setFormStatus("Sending...");
-      setTimeout(() => {
-        window.Email.send({
-          SecureToken: "1a1409d2-3882-4fda-b9ee-ac49bebef0c6",
-          To: "ragavendra.jagathish@gmail.com",
-          From: data.Email,
-          Subject: "New message from your website",
-          Body: `Name: ${data.Name}\nEmail: ${data.Email}\n\nMessage:\n${data.Message}`,
-        })
-          .then((response) => {
-            if (response === "OK") {
-              setFormStatus("Message sent successfully!");
-            } else {
-              setFormStatus("Failed to send message. Please try again.");
-            }
-          })
-          .catch(() => {
-            setFormStatus("Error sending message. Please check your connection.");
-          });
-      }, 1000); // Small delay to ensure script is available
-    } else {
-      setFormStatus("SMTP.js script not loaded yet. Please try again.");
+    if (!smtpLoaded || !window.Email) {
+      console.error("❌ SMTP.js script not available");
+      setFormStatus("SMTP.js not loaded yet. Please try again.");
+      return;
     }
+
+    console.log("📩 Sending email with data:", data);
+
+    setFormStatus("Sending...");
+    window.Email.send({
+      SecureToken: "1a1409d2-3882-4fda-b9ee-ac49bebef0c6",
+      To: "ragavendra.jagathish@gmail.com",
+      From: data.Email,
+      Subject: "New message from your website",
+      Body: `Name: ${data.Name}\nEmail: ${data.Email}\n\nMessage:\n${data.Message}`,
+    })
+      .then((response) => {
+        console.log("📨 SMTP Response:", response);
+        if (response === "OK") {
+          setFormStatus("Message sent successfully!");
+        } else {
+          setFormStatus("Failed to send message. Please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error("❌ Email sending failed:", error);
+        setFormStatus("Error sending message. Check console for details.");
+      });
   };
 
   return (
@@ -69,7 +73,6 @@ const Contact = () => {
           Let's Connect
         </motion.h1>
         <div className="flex flex-col lg:flex-row justify-between max-w-6xl mx-auto px-4">
-          {/* Left Side: Contact Details */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <div className="text-center lg:text-left">
               <motion.a
@@ -113,7 +116,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Side: Contact Form */}
           <div className="lg:w-1/2">
             <form onSubmit={handleSubmit} className="space-y-4">
               <motion.div
