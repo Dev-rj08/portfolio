@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <motion.a 
               whileHover={{ scale: 1.1 }}
-              href="/documents/resume.pdf" className="py-2 px-3 border rounded-md" download="resume.pdf">
+              href="/Documents/resume.pdf" className="py-2 px-3 border rounded-md" download="resume.pdf">
               Resume
             </motion.a>
             <motion.a
